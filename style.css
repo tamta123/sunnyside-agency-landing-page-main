@@ -1,0 +1,86 @@
+body {
+  width: 100vw;
+  font-family: "Fraunces 9pt Soft";
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #fffcf8;
+}
+
+.firstsection {
+  background-image: url(./images/mobile/image-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+  width: 375px;
+  height: 538px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 32px;
+  position: relative;
+}
+
+#myLinks {
+  display: none;
+  width: 329px;
+  height: 305px;
+  background-color: #fffcf8;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-top: 50px;
+  z-index: 10;
+}
+
+header a {
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.142857px;
+  color: #808397;
+  padding: 14px 16px;
+  display: block;
+  text-align: center;
+}
+
+header a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0;
+}
+
+header > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+h1 {
+  font-family: "Fraunces 9pt Soft";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 6.25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  top: 144px;
+  position: absolute;
+}
+
+.arrowdown {
+  position: absolute;
+  top: 294px;
+  left: 45%;
+}
