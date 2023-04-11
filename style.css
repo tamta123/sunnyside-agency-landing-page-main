@@ -62,9 +62,10 @@ header li a {
   background: #fbd600;
   border-radius: 28px;
   margin: 0 auto;
+  position: relative;
 }
 
-.contact li a {
+.contact a {
   font-family: "Fraunces 9pt Soft";
   font-style: normal;
   font-weight: 700;
@@ -73,6 +74,8 @@ header li a {
   letter-spacing: -0.107143px;
   text-transform: uppercase;
   color: #24303e;
+  padding: 16px 30px;
+  position: absolute;
 }
 
 h1 {
@@ -137,7 +140,19 @@ span {
   text-transform: uppercase;
   color: #24303e;
 }
-/* es ar like */
+
+.line {
+  width: 137px;
+  height: 10px;
+  background: rgba(250, 212, 0, 0.25);
+  mix-blend-mode: normal;
+  border-radius: 28px;
+  margin-top: -10px;
+}
+
+.line.two {
+  background: rgba(254, 119, 102, 0.25);
+}
 
 .third-section > img {
   width: 100%;
@@ -335,10 +350,6 @@ h5 {
     border-radius: 28px;
     margin: 0;
   }
-  /* .contact li a {
-    text-align: center;
-    z-index: 10;
-  } */
 
   .first-section {
     background-image: url(./images/desktop/image-header.jpg);
@@ -355,16 +366,28 @@ h5 {
     gap: 47px;
     position: static;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
     background: none;
     width: 100%;
     top: 106px;
     padding-bottom: 0px;
     list-style: none;
     cursor: pointer;
+    padding-top: 0;
   }
 
-  .contact li a {
+  .contact {
+    position: static;
+    background: #ffffff;
+    opacity: 1;
+  }
+  .contact:hover {
+    background: rgba(255, 255, 255, 0.25);
+    mix-blend-mode: normal;
+    border-radius: 28px;
+  }
+
+  .contact a {
     font-family: "Fraunces 9pt Soft";
     font-style: normal;
     font-weight: 700;
@@ -374,6 +397,10 @@ h5 {
     text-transform: uppercase;
     color: #24303e;
     margin: 0 auto;
+  }
+
+  .contact a:hover {
+    color: rgba(255, 255, 255, 1);
   }
 
   h1 {
@@ -441,6 +468,19 @@ h5 {
     text-transform: uppercase;
     color: #24303e;
     cursor: pointer;
+    position: relative;
+  }
+
+  .line {
+    margin-left: 160px;
+  }
+
+  .transform span:hover + .line {
+    background: rgba(250, 212, 0, 1);
+  }
+
+  .transform span:hover + .line.two {
+    background: rgba(254, 119, 102, 1);
   }
   .third-section {
     display: flex;
@@ -516,6 +556,10 @@ h5 {
   .person {
     width: 33.3%;
   }
+
+  .person .two {
+    padding-top: 10px;
+  }
   .sixth-section .desktop {
     width: 25%;
     height: auto;
@@ -524,11 +568,10 @@ h5 {
   .last-section {
     padding: 72px 570px;
   }
+
   .last-section svg {
-    width: 170px;
-    height: 33px;
+    transform: scale(1.5);
   }
-  /* change the size of this svg */
 
   .icons img {
     cursor: pointer;
