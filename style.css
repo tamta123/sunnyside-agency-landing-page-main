@@ -30,6 +30,17 @@ header {
   align-items: center;
 }
 
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 24px solid white;
+  border-left: 24px solid transparent;
+  display: none;
+  position: absolute;
+  top: 82px;
+  left: 329px;
+}
+
 #myLinks {
   display: none;
   width: 329px;
@@ -571,6 +582,10 @@ h5 {
 
   .last-section svg {
     transform: scale(1.5);
+  }
+
+  .icons img:hover {
+    filter: grayscale(100%) brightness(0%) invert(100%);
   }
 
   .icons img {
