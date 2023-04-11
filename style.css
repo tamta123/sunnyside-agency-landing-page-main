@@ -580,6 +580,10 @@ h5 {
     padding: 72px 570px;
   }
 
+  .last-section a:hover {
+    color: #ffffff;
+  }
+
   .last-section svg {
     transform: scale(1.5);
   }
